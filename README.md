@@ -1,6 +1,6 @@
 # EDoP-g - Edge Workspace Shortcut Creator
 
-![EDoP-g Logo](assets/icon.png)
+![EDoP-g Logo](assets/icon.ico)
 
 EDoP-g is a simple Electron.js application that allows Microsoft Edge Workspaces users to create shortcuts for their workspaces on the desktop. Normally, Edge Workspaces do not have a direct way to create shortcuts, but with EDoP-g, you can easily create shortcuts to your workspaces on the desktop.
 
