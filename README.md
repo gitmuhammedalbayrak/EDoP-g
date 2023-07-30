@@ -50,4 +50,3 @@ EDoP-g is created by Muhammed Şamil Albayrak. Feel free to use and modify the a
 ## License
 
 [MIT License](LICENSE)
-```
