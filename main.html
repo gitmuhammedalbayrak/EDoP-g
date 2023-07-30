@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Workspaces Shortcut</title>
+    <link rel="stylesheet" href="assets/bootstrap.min.css" />
+  </head>
+
+
+
+
+  <body>
+    <div class="container pt-5">
+      <h1 class="text-center">Please enter the URL and shortcut name for your Workspace.</h3>
+      <div class="row">
+        <div class="col-md-8 offset-2 pt-2">
+          <input type="text" id="name" placeholder="Enter file name" />
+          <input type="text" id="url" placeholder="Enter URL" />          
+          <button class="btn btn-primary" id="btn">Create</button>
+        </div>
+    </div>
+
+
+
+    <script>
+      let btn = document.querySelector("#btn");
+      let nameInput = document.querySelector("#name");
+      let urlInput = document.querySelector("#url");
+
+      btn.addEventListener("click", () => {
+        electron.ipcRenderer.send("click", urlInput.value, nameInput.value);
+      });
+    </script>
+
+
+
+  </body>
+</html>
