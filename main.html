@@ -2,7 +2,6 @@
 <html lang="en">
 
 
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,20 +10,23 @@
     <link rel="stylesheet" href="assets/bootstrap.min.css" />
   </head>
 
-
-
-
   <body>
-    <div class="container pt-5">
-      <h1 class="text-center">Please enter the URL and shortcut name for your Workspace.</h3>
-      <div class="row">
-        <div class="col-md-8 offset-2 pt-2">
-          <input type="text" id="name" placeholder="Enter file name" />
-          <input type="text" id="url" placeholder="Enter URL" />          
-          <button class="btn btn-primary" id="btn">Create</button>
-        </div>
-    </div>
+	<div class="container pt-5">
+		<h1 class="text-center">Please enter the URL and shortcut name for your Workspace.</h3>
+		<form>
+ 			 <div class="mb-3">
+    			<label for="name" class="form-label">Enter file name:</label>
+   				<input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+  			</div>
 
+ 			  <div class="mb-3">
+    			<label for="url" class="form-label">Enter URL:</label>
+    			<input type="text" class="form-control" id="url">
+  		  </div>
+
+  			<button type="submit" class="btn btn-primary" id="btn">Create</button>
+		</form>
+  </div>
 
 
     <script>
